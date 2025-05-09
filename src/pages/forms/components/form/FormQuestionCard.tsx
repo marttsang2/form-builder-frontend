@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { GripVerticalIcon, PlusIcon, Trash2Icon } from "lucide-react";
+import { PlusIcon, Trash2Icon } from "lucide-react";
 import type { FormQuestion } from "@/api";
 
 interface FormQuestionCardProps {
@@ -36,7 +36,6 @@ export function FormQuestionCard({
     <Card className="bg-white border border-gray-200 overflow-hidden">
       <div className="bg-gray-50 py-2 px-4 flex items-center justify-between border-b border-gray-200">
         <div className="flex items-center space-x-2">
-          <GripVerticalIcon className="h-4 w-4 text-gray-400" />
           <span className="text-sm font-medium text-gray-700">Question {index + 1}</span>
         </div>
         <div className="flex items-center space-x-2">
